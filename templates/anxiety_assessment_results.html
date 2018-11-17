@@ -1,0 +1,36 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<title>Anxiety Assesment Results</title>
+	</head>
+
+	<body id="results">
+	
+		 <script type="text/javascript">
+			function anxietyResults(){
+				var anxietyResultNum = sessionStorage.get('anxiety_results');
+				var anxietySuggest = "";
+ 				<!--  results from the assessment --> 
+				if (anxietyResultNum <= 4) {
+					anxietySuggest =  ". You do not have an anxiety disorder."
+				} else if (anxietyResultNum <= 9) {
+					anxietySuggest =  ". You have a mild anxiety disorder. Monitor your symptoms and see a doctor if symptoms worsen."
+
+				} else if (anxietyResultNum <= 14) {
+					anxietySuggest = ". You have a moderate anxiety disorder. This is possibly a clinically significant condition."
+				} else {
+					anxietySuggest = ". You have a severe anxiety disorder. Active treatment is warrented."
+				}
+				document.getElementById("anxietyMessage").innerHTML = "You got a score of " + anxietyResultNum + anxietySuggest
+			}
+
+        anxietyResults(); 
+				
+	</script>
+		
+</body>
+</html>
+

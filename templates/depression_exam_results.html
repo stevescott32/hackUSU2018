@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<title>Anxiety Assesment Results</title>
+	</head>
+
+	<body id="results">
+	
+		 <script type="text/javascript">
+
+			function depressionResults(){
+				var depressionResultNum = sessionStorage.getItem('depression_score');
+				var depressionSuggest = "";
+				<!-- get results from depression assessment--> 
+				if (depressionResultNum <= 4) {
+					depressionSuggest = ". You have minimal to no depression. Monitor your symptoms, but you do not require treatment at this time."
+				} else if (depressionResultNum <=9) {
+					depressionSuggest = ". You have mild depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+				} else if (depressionResultNum <=14) {
+					depressionSuggest = ". You have moderate depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+				} else if (depressionResultNum <=19) {
+					depressionSuggest = ". You have moderately severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+				} else {
+					depressionSuggest = ". You have severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+				}
+
+				document.getElementById("depressionMessage").innerHTML = "You got a score of " + depressionResultNum + depressionSuggest
+			}
+
+            depressionResults(); 
+				
+	</script>
+		</body>
+</html>
+

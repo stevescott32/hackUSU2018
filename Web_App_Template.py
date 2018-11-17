@@ -11,7 +11,7 @@ def anxiety_assessment():
 
 @app.route("/anxiety_assessment/results/")
 def anxiety_assessment_results():
-    return render_template('result')
+    return render_template('anxiety_assessment_results.html')
 
 @app.route("/depression_assessment/")
 def depression_assessment():
@@ -19,6 +19,5 @@ def depression_assessment():
 
 @app.route("/depression_assessment/results/")
 def depression_assessment_results():
-    return "<h1>Depression assessment results page</h1>"
-
+    return render_template('depression_assessment_results.html')
 					
