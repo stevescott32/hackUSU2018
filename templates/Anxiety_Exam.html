@@ -3,8 +3,69 @@
 <head>
 	<title>Generalized Anxiety Disorder</title>
     <link href="../../static/questionStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
+	<!-- This is Where the Javascript section is! --> 
+	 			<script>
+	//this variable keeps track of the score, later all the answers to the question will be added by and stored here in score	
+	var score = 0
+
+	//these variables store the values for the 
+	var question_1 = 1;
+	var question_2 = 2;
+	var question_3 = 3;
+    var question_4 = 4;
+    var question_5 = 5;
+    var question_6 = 6;
+    var question_7 = 7;
+    var question_8 = 8;
+    var question_9 = 9;
+
+    var score_array = Array(10); 
+    for (var i = score_array.length - 1; i >= 0; i--) {
+    	score_array[i] = 0; 
+    }
+
+    //each of these fuctions updates answer assigned to each question
+    function never(x) {
+    	console.log("Running never function with " + x ); 
+    	score_array[x] = 0 ; 
+    	//document.getElementById("demo").innerHTML = sum_score();
+    } // The function adds 0 to the score
+
+	function several_days(x) {
+		console.log("Running several_days function with " + x); 
+    	score_array[x] = 1; 
+    	//document.getElementById("demo").innerHTML = sum_score();
+    } // The function adds 1 to the score
+
+    function more_than_half(x) {
+    	console.log("Running more_than_half function with " + x); 
+    	score_array[x] = 2; 
+    	//document.getElementById("demo").innerHTML = sum_score();
+    } // The function adds 2 to the score
+
+    function every_day(x) {
+    	console.log("Running every_day function with " + x); 
+    	score_array[x] = 3; 
+    	//document.getElementById("demo").innerHTML = sum_score();
+    }
+
+    function sum_score() {
+    	var result = 0; 
+    	var index = 0; 
+    	for (let value of score_array) {
+
+  			result += score_array[index];
+  			index++;
+		}
+		console.log(result); 
+    	return result
+    }
+	</script>
+
 	<center>
 		<h1 id="banner">Anxiety Disorder Assessment</h1>
 		
@@ -13,70 +74,92 @@
 	<center>
 			<p id="info">For the following questions, please answer in respect to the <br />
 	 		past two weeks. Think of how often you have been bothered by the following problems</p>
+
+	 		<!-- This is Where the Javascript section is!  <H1 id="demo"></H1>-->
+
+
 	 </center>
 	 <div id="questions">
 	 		<!-- These are all the questions and buttons that correspond to various answers --> 
 	 		&nbsp;
 			<h4>1. Feeling nervous, &nbsp;anxious,&nbsp; or on edge</h4>
 			<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_1)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_1)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_1)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_1)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>2. Not being able to stop or control worrying</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_2)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_2)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_2)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_2)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>3. Worrying too much about different things</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_3)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_3)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_3)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_3)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>4. Trouble Relaxing</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_4)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_4)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_4)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_4)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>5. Being so restless that it is hard to sit still</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_5)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_5)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_5)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_5)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>6. Becoming easily annoyed or irritable</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_6)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_6)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_6)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_6)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
 	 		<h4>7. Feeling afraid as if something awful might happen</h4>
 	 		<form>
-			<input type="radio" name="setOne" >Not at All</input> 
-			<input type="radio" name="setOne" >Several Days</input>
-			<input type="radio" name="setOne" >More Than Half the Days</input>
-			<input type="radio" name="setOne" >Nearly Every Day</input>
+			<input type="radio" name="setOne" onclick="never(question_7)>Not at All</input> 
+			<input type="radio" name="setOne" onclick="several_days(question_7)>Several Days</input>
+			<input type="radio" name="setOne" onclick="more_than_half(question_7)>More Than Half the Days</input>
+			<input type="radio" name="setOne" onclick="every_day(question_7)>Nearly Every Day</input>
 		</form>
 	 		&nbsp;
+	 	
 
-            <form method="GET" action="./results/">
-              <button type="submit" class="blueButton">Submit</button>
-            </form>
-           </div>
-  </body>
+ 			<br />
+ 			<br />
+ 			<br />
+
+ 			<center>
+					<h5>click here to submit your answers</h5> 
+					<form method="GET" action="./results/">
+              <button type="submit" class="blueButton" onclick="submit_score()">Submit</button>
+            </form>				
+	 				
+	 		</center>
+
+<script>
+	document.getElementById("demo").innerHTML = sum_score();
+
+	function submit_score() {
+		var final_score = sum_score()
+		localStorage.setItem('anxiety_results', final_score)
+	}
+</script>
+
+</body>
 </html>

@@ -1,0 +1,37 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="../../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<title>Anxiety Assesment Results</title>
+	</head>
+
+	<body id="results">
+    <p id=anxietyMessage></p>
+	
+		 <script type="text/javascript">
+			function anxietyResults(){
+				var anxietyResultNum = localStorage.getItem('anxiety_results');
+				var anxietySuggest = "";
+ 				<!--  results from the assessment --> 
+				if (anxietyResultNum <= 4) {
+					anxietySuggest += "Usually, people without anxiety disorder have a score between 0 and 4. "
+				} else if (anxietyResultNum <= 9) {
+					anxietySuggest =  "Scores between 5 and 9 correspond to mild anxiety. This is relatively common and may not require any medical attention. Monitor your symptoms and see a doctor if symptoms worsen."
+
+				} else if (anxietyResultNum <= 14) {
+					anxietySuggest += "Scores between 10 and 14 correspond to moderate anxiety. It may be helpful to see a medical professional like a therapist."
+				} else if(anxietyResultNum > 14) {
+					anxietySuggest += " Scores greater than 14 are generally associated with severe anxiety. It is recommended that you meet with a medical professional to discuss your condition."
+				}
+				document.getElementById("anxietyMessage").innerHTML = "You got a score of " + anxietyResultNum + ". " + anxietySuggest
+			}
+
+        anxietyResults(); 
+				
+	</script>
+		
+</body>
+</html>
+

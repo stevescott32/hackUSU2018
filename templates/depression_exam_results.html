@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="../../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<title>Depression Assesment Results</title>
+	</head>
+
+	<body id="results">
+    <p id="displayResults"></p>
+	
+		 <script type="text/javascript">
+
+			function depressionResults(){
+				var depressionResultNum = localStorage.getItem('depression_score');
+				var depressionSuggest = "";
+				<!-- get results from depression assessment--> 
+				if (depressionResultNum <= 4) {
+					depressionSuggest = "Usually, people without depression have a score less than 4. Monitor your symptoms, but it is unlikely that you require treatment at this time."
+				} else if (depressionResultNum <=9) {
+					depressionSuggest = "Scores between 5 and 9 generally correspond to mild depression. This is relatively common and may not require medical attention. Monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+				} else if (depressionResultNum <=14) {
+					depressionSuggest = "Scores between 10 and 14 generally correspond to moderate depression. It may be helpful to see it medical professional like a therapist to discuss your condition and look for ways to potentially improve it."
+				} else if (depressionResultNum <=19) {
+					depressionSuggest = "Scores between 15 and 19 generally correspond to moderately severe depression. It is recommended that you meet with a medical professional to discuss possible treatments and strategies to improve your condition."
+				} else {
+					depressionSuggest = "Scores above 19 generally mean your condition requires medical attention. It is recommended that you meet with a medical professional to discuss possible treatments and strategies to improve your condition."
+				}
+
+				document.getElementById("displayResults").innerHTML = "You got a score of " + depressionResultNum + ". " + depressionSuggest
+			}
+
+            depressionResults(); 
+				
+	</script>
+  </body>
+</html>
+

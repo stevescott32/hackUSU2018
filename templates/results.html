@@ -27,7 +27,8 @@
 			}
 
 			function depressionResults(){
-				var depressionResultNum;
+				var depressionResultNum = sessionStorage.getItem('depression_score');
+				console.log("depression score: " + depressionResultNum); 
 				var depressionSuggest = "";
 				<!-- get results from depression assessment--> 
 				if (depressionResultNum <= 4) {
