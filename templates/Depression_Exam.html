@@ -3,6 +3,8 @@
 <head>
 	<title>Depression Assessment</title>
 
+    <link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
 	<!-- This is Where the Javascript section is! --> 
@@ -73,7 +75,7 @@
 			<p>For the following questions, please answer in respect to the <br />
 	 		past two weeks. Think of how often you have been bothered by the following problems</p>
 
-	 		<H1 id="demo"></H1>
+	 		<!-- This is Where the Javascript section is!  <H1 id="demo"></H1>-->
 
 
 	 </center>
@@ -141,13 +143,17 @@
 			<button type="button" onclick="more_than_half(question_9)">More Than Half the Days</button>
 			<button type="button" onclick="every_day(question_9)">Nearly Every Day</button>
 	 		&nbsp;
+
  			<br />
  			<br />
  			<br />
 
  			<center>
-					<h5>click here to submit your answers</h5> 				
-	 				<button type="button" onclick="sum_score()">SUBMIT</button>
+					<h5>click here to submit your answers</h5> 
+					<form method="GET" action="./results/">
+              <button type="submit" class="blueButton" onclick="submit_score()">Submit</button>
+            </form>				
+	 				
 	 		</center>
 
 <script>
@@ -161,3 +167,4 @@
 
 </body>
 </html>
+

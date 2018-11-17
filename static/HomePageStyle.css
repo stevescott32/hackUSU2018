@@ -1,58 +1,88 @@
-body {
-	background-color: #9fbfdf; 
+body {background-image: url("BlueBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 75%;
 	height: auto;
 	margin: 7%;
 }
-
 div#banner {
-	border: dashed black;
+	border: solid #e0e0d1;
+	border-width: 10px;
+	border-style: outset;
+	background-color: white;
 
 }
-
 div#anxiety {
+	
 	width: 300px;
 	height: 200px;
 	display: inline;
 	float: right;
-	margin: 15px;
 }
-
 div#depression {
 	width: 300px;
 	height: 200px;
 	margin: 15px;
 }
+div#footer {
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	float: right;
+	
+
+}
+li a{
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	text-align: center;
+}
+li {
+	display: inline;
+	border: 1px solid black;
+	margin: 7px;
+	float: left;
+	background-color: white;
+}
 
 .blueButton {
+    background-color: white;
     background-color: #9fbfdf;
     color: black;
     transition: all 0.3s; 
     text-align: center;
-    border: 4px solid blue;
-    cursor: pointer;
-    font-size: 20px;
-    padding 10px 25px;
-    border-radius 5px;
-    margin: 4px;
-}
+     border: 4px solid blue;
+     cursor: pointer;
+     font-size: 20px;
+     padding 10px 25px;
+     border-radius 5px;
+     margin: 4px;
+ }
+ 
+ .blueButton:hover {
+     background-color: blue;
+     color: white;
+ }
+ 
+ .blueButton span:after {
+     content: '\00bb';
+     position: absolute:
+     opacity: 0;
+     top: 0;
+     right: -20px; 
+     transition: 0.3s;
+ }
+ 
+ .blueButton:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
 
-.blueButton:hover {
-    background-color: blue;
-    color: white;
-}
 
-.blueButton span:after {
-    content: '\00bb';
-    position: absolute:
-    opacity: 0;
-    top: 0;
-    right: -20px; 
-    transition: 0.3s;
-}
 
-.blueButton:hover span:after {
-    opacity: 1;
-    right: 0;
-}
 

@@ -11,18 +11,48 @@
 		</div>
 		<div id="anxiety">
 			<p id="anxietyInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for generalised anxiety disorder</p>
-			<p><button class="blueButton" id="anxietyButton" onclick="">Anxiety Assessment</button></p>
+			<p>
+              <form method="GET" action="/anxiety_assessment/">
+                <button class="blueButton" type="submit" id="anxietyButton" onclick="">Anxiety Assessment</button>
+                </form>
+            </p>
 		</div>
 		<div id="depression">
 			<p id="depressionInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for depressive disorders.</p>
-			<p><button class="blueButton" onclick="">Depressions Assessment</button></p>
+			<p>
+              <form method="GET" action="/depression_assessment/">
+            <button class="blueButton" type="submit" onclick="">Depression Assessment</button>
+            </form>
+            </p>
 		</div>
-
+		<div id="footer">
+			<hr/>
+			<h4 id="links">Here are some helpful links and resources</h4>
+			<ul>
+				<li>
+					<a href="https://adaa.org/understanding-anxiety">Understanding Anxiety</a>
+				</li>
+				<li>
+					<a href="https://www.apa.org/helpcenter/anxiety.aspx">How Psychologist Can Help with Anxiety Disorders</a>
+				</li>
+				<li>
+					<a href="https://helpguide.org/articles/depression/coping-with-depression.htm">Coping with depression</a>
+				</li>
+				<li> 
+					<a href="https://www.verywellmind.com/tips-for-living-with-depression-1066834">Living with depression</a>
+				</li>
+				<li> 
+					<a href="https://counseling.usu.edu">USU Counseling Center</a>
+				</li>
+			</ul>
+		</div>
 		<script type="text/JavaScript">
 			document.getElementById("anxiety").style.textAlign="center";
 			document.getElementById("depression").style.textAlign="center"
 			document.getElementById("title").innerHTML="Mental Health Assessments";
 			document.getElementById("title").style.textAlign="center";
+			document.getElementById("links").style.textAlign="center";
+
 
 
 		</script>
