@@ -1,5 +1,5 @@
 body {
-	background-color: white; 
+	background-color: #9fbfdf; 
 	width: 75%;
 	height: auto;
 	margin: 7%;
@@ -25,7 +25,7 @@ div#depression {
 }
 
 .blueButton {
-    background-color: white;
+    background-color: #9fbfdf;
     color: black;
     transition: all 0.3s; 
     text-align: center;
