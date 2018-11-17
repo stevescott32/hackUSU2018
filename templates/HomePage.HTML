@@ -1,0 +1,31 @@
+<html lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<title>WELCOME</title>
+	</head>
+	<body>
+		<div id="banner">
+		<h1 id="title"></h1>
+		</div>
+		<div id="anxiety">
+			<p id="anxietyInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for generalised anxiety disorder</p>
+			<p><button class="blueButton" id="anxietyButton" onclick="">Anxiety Assessment</button></p>
+		</div>
+		<div id="depression">
+			<p id="depressionInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for depressive disorders.</p>
+			<p><button class="blueButton" onclick="">Depressions Assessment</button></p>
+		</div>
+
+		<script type="text/JavaScript">
+			document.getElementById("anxiety").style.textAlign="center";
+			document.getElementById("depression").style.textAlign="center"
+			document.getElementById("title").innerHTML="Mental Health Assessments";
+			document.getElementById("title").style.textAlign="center";
+
+
+		</script>
+
+	</body>
+</html>
