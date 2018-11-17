@@ -25,3 +25,8 @@ def depression_assessment():
 def depression_assessment_results():
     return "<h1>Depression assessment results page</h1>"
 
+@app.route("/AnxietyExam")
+def E_Exam():
+	return render_template('test.html')
+	
+
