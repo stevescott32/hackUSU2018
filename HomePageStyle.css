@@ -1,0 +1,22 @@
+body {
+	background-color: #9fbfdf;
+	width: 75%;
+	height: auto;
+	margin: 7%;
+}
+div#banner {
+	border: dashed black;
+
+}
+div#anxiety {
+	width: 300px;
+	height: 200px;
+	display: inline;
+	float: right;
+	margin: 15px;
+}
+div#depression {
+	width: 300px;
+	height: 200px;
+	margin: 15px;
+}
