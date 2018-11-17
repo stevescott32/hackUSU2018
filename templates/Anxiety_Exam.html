@@ -2,66 +2,81 @@
 <html>
 <head>
 	<title>Generalized Anxiety Disorder</title>
-    <link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../static/questionStyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<center>
-		<h1>Anxiety Disorder Assessment</h1>
+		<h1 id="banner">Anxiety Disorder Assessment</h1>
 		
 	</center>
 	&nbsp;
 	<center>
-			<p>For the following questions, please answer in respect to the <br />
+			<p id="info">For the following questions, please answer in respect to the <br />
 	 		past two weeks. Think of how often you have been bothered by the following problems</p>
 	 </center>
+	 <div id="questions">
 	 		<!-- These are all the questions and buttons that correspond to various answers --> 
 	 		&nbsp;
 			<h4>1. Feeling nervous, &nbsp;anxious,&nbsp; or on edge</h4>
-			<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+			<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>2. Not being able to stop or control worrying</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>3. Worrying too much about different things</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>4. Trouble Relaxing</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>5. Being so restless that it is hard to sit still</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>6. Becoming easily annoyed or irritable</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 	 		<h4>7. Feeling afraid as if something awful might happen</h4>
-	 		<button type="button">Not at All</button> 
-			<button type="button">Several Days</button>
-			<button type="button">More Than Half the Days</button>
-			<button type="button">Nearly Every Day</button>
+	 		<form>
+			<input type="radio" name="setOne" >Not at All</input> 
+			<input type="radio" name="setOne" >Several Days</input>
+			<input type="radio" name="setOne" >More Than Half the Days</input>
+			<input type="radio" name="setOne" >Nearly Every Day</input>
+		</form>
 	 		&nbsp;
 
             <form method="GET" action="./results/">
               <button type="submit" class="blueButton">Submit</button>
             </form>
-
+           </div>
   </body>
 </html>

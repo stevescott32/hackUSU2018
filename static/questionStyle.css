@@ -1,0 +1,32 @@
+button{
+	width: 100px;
+	height: 40px;
+	font-size: 10px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 30px; 
+}
+
+button:hover{
+	background-color: #ffc266;
+}
+
+h1#banner {
+	background-color: white;
+	padding: 100px;
+	background-image: url("heartHands.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	font-size: 45px;
+	font-weight:bold;
+	font-family: monospace;
+	text-shadow: 3px 3px white;
+}
+p#info {
+	font-size: 20px;
+	margin: 60px;
+}
+div#questions {
+	text-align: center;
+}
