@@ -32,29 +32,28 @@
     function never(x) {
     	console.log("Running never function with " + x ); 
     	score_array[x] = 0 ; 
-    	document.getElementById("demo").innerHTML = sum_score();
+    	//document.getElementById("demo").innerHTML = sum_score();
     } // The function adds 0 to the score
 
 	function several_days(x) {
 		console.log("Running several_days function with " + x); 
     	score_array[x] = 1; 
-    	document.getElementById("demo").innerHTML = sum_score();
+    	//document.getElementById("demo").innerHTML = sum_score();
     } // The function adds 1 to the score
 
     function more_than_half(x) {
     	console.log("Running more_than_half function with " + x); 
     	score_array[x] = 2; 
-    	document.getElementById("demo").innerHTML = sum_score();
+    	//document.getElementById("demo").innerHTML = sum_score();
     } // The function adds 2 to the score
 
     function every_day(x) {
     	console.log("Running every_day function with " + x); 
     	score_array[x] = 3; 
-    	document.getElementById("demo").innerHTML = sum_score();
+    	//document.getElementById("demo").innerHTML = sum_score();
     }
 
     function sum_score() {
-    	// score = question_1+question_2+question_3+question_4+question_5+question_6 +question_7+question_8+question_9;
     	var result = 0; 
     	var index = 0; 
     	for (let value of score_array) {
@@ -160,8 +159,8 @@
 	document.getElementById("demo").innerHTML = sum_score();
 
 	function submit_score() {
-		var final_score = sun_score()
-		sessionStorage.setItem('depression_score', final_score)
+		var final_score = sum_score()
+		localStorage.setItem('depression_score', final_score)
 	}
 </script>
 
