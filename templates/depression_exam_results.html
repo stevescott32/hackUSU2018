@@ -16,18 +16,18 @@
 				var depressionSuggest = "";
 				<!-- get results from depression assessment--> 
 				if (depressionResultNum <= 4) {
-					depressionSuggest = ". You have minimal to no depression. Monitor your symptoms, but you do not require treatment at this time."
+					depressionSuggest = "Usually, people without depression have a score less than 4. Monitor your symptoms, but it is unlikely that you require treatment at this time."
 				} else if (depressionResultNum <=9) {
-					depressionSuggest = ". You have mild depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+					depressionSuggest = "Scores between 5 and 9 generally correspond to mild depression. This is relatively common and may not require medical attention. Monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
 				} else if (depressionResultNum <=14) {
-					depressionSuggest = ". You have moderate depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+					depressionSuggest = "Scores between 10 and 14 generally correspond to moderate depression. It may be helpful to see it medical professional like a therapist to discuss your condition and look for ways to potentially improve it."
 				} else if (depressionResultNum <=19) {
-					depressionSuggest = ". You have moderately severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+					depressionSuggest = "Scores between 15 and 19 generally correspond to moderately severe depression. It is recommended that you meet with a medical professional to discuss possible treatments and strategies to improve your condition."
 				} else {
-					depressionSuggest = ". You have severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+					depressionSuggest = "Scores above 19 generally mean your condition requires medical attention. It is recommended that you meet with a medical professional to discuss possible treatments and strategies to improve your condition."
 				}
 
-				document.getElementById("displayResults").innerHTML = "You got a score of " + depressionResultNum + depressionSuggest
+				document.getElementById("displayResults").innerHTML = "You got a score of " + depressionResultNum + ". " + depressionSuggest
 			}
 
             depressionResults(); 
