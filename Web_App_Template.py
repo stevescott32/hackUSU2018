@@ -3,7 +3,7 @@ app= Flask(__name__)
 
 @app.route("/")
 def hello():
-	return "<h1>Home Page!</h1>" 
+	return render_template('HomePage.HTML')
 
 @app.route("/about/")
 def about_func():
