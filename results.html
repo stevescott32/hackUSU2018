@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<title>Anxiety Assesment Results</title>
+	</head>
+
+	<body>
+	
+		 <script type="text/javascript">
+			function anxietyResults(){
+				var anxietyResultNum;
+				var anxietySuggest = "";
+ 				<!--  results from the assessment --> 
+				if (anxietyResultNum <= 4) {
+					anxietySuggest =  ". You do not have an anxiety disorder."
+				} else if (anxietyResultNum <= 9) {
+					anxietySuggest =  ". You have a mild anxiety disorder. Monitor your symptoms and see a doctor if symptoms worsen."
+
+				} else if (anxietyResultNum <= 14) {
+					anxietySuggest = ". You have a moderate anxiety disorder. This is possibly a clinically significant condition."
+				} else {
+					anxietySuggest = ". You have a severe anxiety disorder. Active treatment is warrented."
+				}
+				document.getElementById("anxietyMessage").innerHTML = "You got a score of " + anxietyResultNum + anxietySuggest
+			}
+
+			function depressionResults(){
+				var depressionResultNum;
+				var depressionSuggest = "";
+				<!-- get results from depression assessment--> 
+				if (depressionResultNum <= 4) {
+					depressionSuggest = ". You have minimal to no depression. Monitor your symptoms, but you do not require treatment at this time."
+				} else if (depressionResultNum <=9) {
+					depressionSuggest = ". You have mild depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+				} else if (depressionResultNum <=14) {
+					depressionSuggest = ". You have moderate depression; monitor the duration of symptoms and any functional impairment they may cause to determine necessity of treatment."
+				} else if (depressionResultNum <=19) {
+					depressionSuggest = ". You have moderately severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+				} else {
+					depressionSuggest = ". You have severe depression. You should search for active treatment with psychotherapy, medications, or a combination of the two."
+				}
+
+				document.getElementById("depressionMessage").innerHTML = "You got a score of " + depressionResultNum + depressionSuggest
+			}
+				
+	</script>
+		<p id="depressionMessage"><button onclick="anxietyResults()">click here</button></p>
+		<p id="anxietyMessage"><button onclick="depressionResults()">click here </button><p>
+</body>
+</html>
