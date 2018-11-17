@@ -1,4 +1,6 @@
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -6,28 +8,7 @@
 		<title>WELCOME</title>
 	</head>
 	<body>
-		<div id="banner">
-		<h1 id="title"></h1>
-		</div>
-		<div id="anxiety">
-			<p id="anxietyInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for generalised anxiety disorder</p>
-			<p>
-              <form method="GET" action="/anxiety_assessment/">
-                <button class="blueButton" type="submit" id="anxietyButton" onclick="">Anxiety Assessment</button>
-                </form>
-            </p>
-		</div>
-		<div id="depression">
-			<p id="depressionInformation">This easy-to-use self administered patient questionnaire is used as a screening tool and severity measure for depressive disorders.</p>
-			<p>
-              <form method="GET" action="/depression_assessment/">
-            <button class="blueButton" type="submit" onclick="">Depression Assessment</button>
-            </form>
-            </p>
-		</div>
-		<div id="footer">
-			<hr/>
-			<h4 id="links">Here are some helpful links and resources</h4>
+		<div id="header">
 			<ul>
 				<li>
 					<a href="https://adaa.org/understanding-anxiety">Understanding Anxiety</a>
@@ -46,16 +27,30 @@
 				</li>
 			</ul>
 		</div>
+		<div id="banner">
+			<h1 id="title">Mental Health Assesment</h1>
+		</div>
+		<div id="anxiety">
+			<p><button id="bigButton" onclick="">Anxiety Assessment</button></p>
+				<div id="anxietyInformation">
+					<p>This easy-to-use self administered patient questionnaire <br> is used as a screening tool and severity measure for generalised anxiety disorder</p>
+
+		</div>
+		<div id="depression">
+			<p><br><br><button id="bigButton" onclick="">Depressions Assessment</button></p>
+			<p id="depressionInformation"><br>This easy-to-use self administered patient questionnaire <br> is used as a screening tool and severity measure for depressive disorders.</p>
+			
+		</div>
+		</div>
+
 		<script type="text/JavaScript">
 			document.getElementById("anxiety").style.textAlign="center";
 			document.getElementById("depression").style.textAlign="center"
-			document.getElementById("title").innerHTML="Mental Health Assessments";
 			document.getElementById("title").style.textAlign="center";
 			document.getElementById("links").style.textAlign="center";
 
 
 
 		</script>
-
 	</body>
 </html>

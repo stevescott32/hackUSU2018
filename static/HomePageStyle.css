@@ -1,53 +1,79 @@
-body {background-image: url("BlueBackground.jpg");
+body {
 	background-repeat: no-repeat;
-	background-size: cover;
-	width: 75%;
+	background-size:
+	width: 90%;
 	height: auto;
-	margin: 7%;
+	margin: auto;	
 }
-div#banner {
-	border: solid #e0e0d1;
-	border-width: 10px;
-	border-style: outset;
-	background-color: white;
 
+div#banner {
+	background-color: white;
+	padding: 100px;
+	background-image: url("heartHands.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%
+}
+h1#title{
+	font-size: 60px;
+	font-weight:bold;
+	font-family: monospace;
+	text-shadow: 3px 3px white; 
 }
 div#anxiety {
-	
-	width: 300px;
-	height: 200px;
-	display: inline;
-	float: right;
+	background-image: url("blueGradient.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px
 }
-div#depression {
-	width: 300px;
-	height: 200px;
-	margin: 15px;
+div#anxietyInformation {
+	font-size: 20px;
 }
-div#footer {
+button#bigButton{
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 30px;
 }
+
+button:hover{
+	background-color: #ffc266;
+}
+
+p#depressionInformation{
+	font-size: 20px;
+}
+
+div#header {
+	height: 100px;
+	margin-left: 10%;
+	margin-top: 30px;
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	width: 200px;
 	overflow: hidden;
-	text-align: center;
-	float: right;
+	display: inline;
 	
 
 }
 li a{
 	display: block;
-	padding: 8px;
+	padding: 8px 16px;
 	text-decoration: none;
-	text-align: center;
 }
 li {
-	display: inline;
+	float: left;
 	border: 1px solid black;
 	margin: 7px;
 	float: left;
 	background-color: white;
+	border-radius: 7px;
 }
 
 .blueButton {
@@ -64,12 +90,12 @@ li {
      margin: 4px;
  }
  
- .blueButton:hover {
+ button#blueButton:hover {
      background-color: blue;
      color: white;
  }
  
- .blueButton span:after {
+ button#blueButton span:after {
      content: '\00bb';
      position: absolute:
      opacity: 0;
@@ -78,11 +104,18 @@ li {
      transition: 0.3s;
  }
  
- .blueButton:hover span:after {
+ button#blueButton:hover span:after {
      opacity: 1;
      right: 0;
  }
-
+body#results {
+	font-size: 20px;
+	background-image: url("blueGradient.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 10%;
+}
 
 
 

@@ -2,11 +2,11 @@
 
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<link href="HomePageStyle.css" rel="stylesheet" type="text/css"/>
+		<link href="../static/HomePageStyle.css" rel="stylesheet" type="text/css"/>
 		<title>Anxiety Assesment Results</title>
 	</head>
 
-	<body>
+	<body id="results">
 	
 		 <script type="text/javascript">
 			function anxietyResults(){
@@ -47,7 +47,7 @@
 			}
 				
 	</script>
-		<p id="depressionMessage"><button onclick="anxietyResults()">click here</button></p>
-		<p id="anxietyMessage"><button onclick="depressionResults()">click here </button><p>
+		<p id="depressionMessage"><button id="bigButton" onclick="depressionResults()">click here</button></p>
+		<p id="anxietyMessage"><button id="bigButton" onclick="anxietyResults()">click here </button><p>
 </body>
 </html>
