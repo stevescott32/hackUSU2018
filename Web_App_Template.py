@@ -8,3 +8,20 @@ def hello():
 @app.route("/about")
 def about_func():
 	return "<h1>This is the about page!</h1>" 
+
+@app.route("/anxiety_assessment")
+def anxiety_assessment():
+    return "<h1>Anxiety assessment page</h1>"
+
+@app.route("/anxiety_assessment/results")
+def anxiety_assessment_results():
+    return "<h1>Anxiety assessment results page</h1>"
+
+@app.route("/depression_assessment")
+def depression_assessment():
+    return "<h1>Depression assessment page</h1>"
+
+@app.route("/depression_assessment/results")
+def depression_assessment_results():
+    return "<h1>Depression assessment results page</h1>"
+
